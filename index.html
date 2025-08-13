@@ -1,44 +1,119 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <title>Meu portfólio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Minhas artistas favorita do mundo do kpop</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <header class="container text-center">
-        <img src="img/avatar-perfil.png" alt="avatar da Fernanda" class="rounded-circle" width="150" height="150" srcset="">
-        <p class="lead">Eu sou Danila_</p>
-        <h1>Eu sou estudante</h1>
-        <p>Sou estudante do ensino medio e não sei nada de programação</p>
-        <p>Minhas habilidades</p>
-        <div>
-            <p class="badge bg-secondary">HTML</p>
-            <p class="badge bg-secondary">CSS</p>
-            <p class="badge bg-secondary">JavaScript</p>
-            <p class="badge bg-secondary">Scratch</p>
-        </div>
-    </header>
-    <main class="container">
-        <h2>Meus projetos</h2>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="card" style="width: 18rem;">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                  </div>
-            </div>
-        </div>
+<body class="bg-gradient-to-b from-pink-100 to-white text-gray-800 font-sans">
 
-    </main>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Header -->
+  <header class="bg-pink-500 text-white p-4 shadow-md">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-2xl font-bold">NMIXX FanZone</h1>
+      <nav>
+        <ul class="flex gap-6">
+          <li><a href="#sobre" class="hover:underline">Sobre</a></li>
+          <li><a href="#integrantes" class="hover:underline">Integrantes</a></li>
+          <li><a href="#musicas" class="hover:underline">Lançamentos</a></li>
+          <li><a href="#agenda" class="hover:underline">Agenda</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="bg-[url('https://i.imgur.com/vovK9yy.jpg')] bg-cover bg-center h-[400px] flex items-center justify-center">
+    <div class="bg-black bg-opacity-60 p-10 rounded-xl text-center text-white">
+      <h2 class="text-4xl font-bold mb-4">Bem-vindo ao Universo de NMIXX!</h2>
+      <p class="text-lg">Tudo sobre o grupo feminino mais dinâmico da 4ª geração do K-pop.</p>
+    </div>
+  </section>
+
+  <!-- Sobre -->
+  <section id="sobre" class="container mx-auto py-10 px-4">
+    <h2 class="text-3xl font-bold mb-4">Sobre o NMIXX</h2>
+    <p class="text-lg leading-relaxed">
+      NMIXX é um grupo feminino sul-coreano formado pela JYP Entertainment, debutando oficialmente em fevereiro de 2022. O grupo é conhecido por seu conceito único "MIXX POP", que mistura diferentes gêneros musicais em uma única música. As integrantes são talentosas em canto, dança e performance, mostrando versatilidade e carisma em cada lançamento.
+    </p>
+  </section>
+
+  <!-- Integrantes -->
+  <section id="integrantes" class="bg-white py-10 px-4">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold mb-6">Integrantes</h2>
+      <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <!-- Exemplo de integrante -->
+        <div class="bg-pink-100 p-4 rounded-lg shadow text-center">
+          <img src="img/nload.jpg" alt="Lily" class="rounded-full w-32 h-32 mx-auto mb-3">
+          <h3 class="text-xl font-semibold">Lily</h3>
+          <p>Vocal principal, conhecida por sua voz poderosa e presença marcante.</p>
+        </div>
+        <div class="bg-pink-100 p-4 rounded-lg shadow text-center">
+          <img src="img/haewon.jpg" alt="Haewon" class="rounded-full w-32 h-32 mx-auto mb-3">
+          <h3 class="text-xl font-semibold">Haewon</h3>
+          <p>Líder do grupo e vocalista com talento e elegância.</p>
+        </div>
+        <div class="bg-pink-100 p-4 rounded-lg shadow text-center">
+          <img src="img/sully.jpg" alt="Sullyoon" class="rounded-full w-32 h-32 mx-auto mb-3">
+          <h3 class="text-xl font-semibold">Sullyoon</h3>
+          <p>Visual do grupo, elogiada por sua beleza e vocais suaves.</p>
+        </div>
+        <!-- Adicione mais membros conforme necessário -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Lançamentos -->
+  <section id="musicas" class="container mx-auto py-10 px-4">
+    <h2 class="text-3xl font-bold mb-6">Últimos Lançamentos</h2>
+    <ul class="space-y-4">
+      <li>
+        <strong>"DASH"</strong> - Lançado em 11/03/2025
+        <br>
+        <a href="https://www.youtube.com/watch?v=ExampleVideo" target="_blank" class="text-pink-600 hover:underline">🎵 Ver no YouTube</a>
+      </li>
+      <li>
+        <strong>"Soñar"</strong> - Lançado em 07/07/2024
+        <br>
+        <a href="https://www.youtube.com/watch?v=ExampleVideo2" target="_blank" class="text-pink-600 hover:underline">🎵 Ver no YouTube</a>
+      </li>
+    </ul>
+  </section>
+
+  <!-- Agenda -->
+  <section id="agenda" class="bg-pink-50 py-10 px-4">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold mb-6">Agenda de Shows</h2>
+      <table class="w-full text-left border-collapse bg-white shadow-md rounded-xl overflow-hidden">
+        <thead>
+          <tr class="bg-pink-200">
+            <th class="p-3">Data</th>
+            <th class="p-3">Evento</th>
+            <th class="p-3">Local</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="border-t">
+            <td class="p-3">15/09/2025</td>
+            <td class="p-3">NMIXX World Tour</td>
+            <td class="p-3">Tóquio, Japão</td>
+          </tr>
+          <tr class="border-t">
+            <td class="p-3">25/09/2025</td>
+            <td class="p-3">Music Bank Special</td>
+            <td class="p-3">Seul, Coreia do Sul</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-pink-500 text-white text-center p-4 mt-10">
+    <p>&copy; 2025 NMIXX FanZone. Projeto feito por fãs, sem fins lucrativos.</p>
+  </footer>
+
 </body>
-
 </html>
